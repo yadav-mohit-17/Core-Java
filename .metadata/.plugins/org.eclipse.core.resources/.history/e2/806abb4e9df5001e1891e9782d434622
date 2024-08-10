@@ -1,0 +1,19 @@
+package string;
+
+public class WordWithHighestRepeatedLetter {
+	public static void main(String[] args) {
+		String str ="Welcome to google team";
+		String str1="";
+		int len=0;
+		
+		String[] words=str.split(" ");
+		for(int i=0;i<words.length;i++) {		//4
+			len=words[i].length();
+			if(len > words[i].length()) {
+				str1=words[i];
+			}
+		}
+		System.out.println(str1);
+	}
+
+}

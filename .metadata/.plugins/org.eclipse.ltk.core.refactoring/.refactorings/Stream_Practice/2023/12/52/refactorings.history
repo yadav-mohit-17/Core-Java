@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.app.stream.message&apos; to &apos;Message&apos;&#x0D;&#x0A;- Original project: &apos;Stream_Practice&apos;&#x0D;&#x0A;- Original element: &apos;com.app.stream.message&apos;&#x0D;&#x0A;- Renamed element: &apos;com.app.stream.Message&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;message&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.app.stream{message.java[message" matchStrategy="1" name="Message" qualified="false" references="true" similarDeclarations="false" stamp="1703661593065" textual="false" version="1.0"/>
+</session>

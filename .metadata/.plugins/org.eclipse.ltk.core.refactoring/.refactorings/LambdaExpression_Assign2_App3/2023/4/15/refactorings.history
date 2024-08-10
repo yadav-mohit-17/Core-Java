@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;p1.IComparable&apos; to &apos;IArithmetic&apos;&#x0D;&#x0A;- Original project: &apos;LambdaExpression_Assign2_App3&apos;&#x0D;&#x0A;- Original element: &apos;p1.IComparable&apos;&#x0D;&#x0A;- Renamed element: &apos;p1.IArithmetic&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;IComparable&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;p1{IComparable.java[IComparable" matchStrategy="1" name="IArithmetic" qualified="false" references="true" similarDeclarations="false" stamp="1681490213329" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;test.Multiply&apos; to &apos;MultiplyTwoArray&apos;&#x0D;&#x0A;- Original project: &apos;Practice_Array&apos;&#x0D;&#x0A;- Original element: &apos;test.Multiply&apos;&#x0D;&#x0A;- Renamed element: &apos;test.MultiplyTwoArray&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Multiply&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;test{Multiply.java[Multiply" matchStrategy="1" name="MultiplyTwoArray" qualified="false" references="true" similarDeclarations="false" stamp="1706632172026" textual="false" version="1.0"/>
+</session>

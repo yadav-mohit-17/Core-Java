@@ -1,0 +1,11 @@
+package string;
+
+public class CountNumbersOfWordsInString {
+	public static void main(String[] args) {
+		String str ="Welcome To Java Application Development World";
+		
+		String[] str1=str.split(" ");
+		System.out.println(str1.length);
+	}
+
+}

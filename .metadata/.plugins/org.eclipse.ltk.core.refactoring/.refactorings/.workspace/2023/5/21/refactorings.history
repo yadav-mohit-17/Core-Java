@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;List_App1&apos; to &apos;List_App1(ArrayList)&apos;" description="Rename resource &apos;List_App1&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/List_App1" name="List_App1(ArrayList)" stamp="1684942208464" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;List_App(LinkedList)&apos; to &apos;List_App2(LinkedList)&apos;" description="Rename resource &apos;List_App(LinkedList)&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/List_App(LinkedList)" name="List_App2(LinkedList)" stamp="1684942261807" updateReferences="true"/>
+</session>

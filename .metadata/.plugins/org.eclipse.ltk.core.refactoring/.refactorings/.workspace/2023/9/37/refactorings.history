@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;InnerClass_Practice&apos; to &apos;InnerClass_App5&apos;" description="Rename resource &apos;InnerClass_Practice&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/InnerClass_Practice" name="InnerClass_App5" stamp="1694592356077" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;InnerClass_App5&apos; to &apos;InnerClass_App(practice-5)&apos;" description="Rename resource &apos;InnerClass_App5&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/InnerClass_App5" name="InnerClass_App(practice-5)" stamp="1694592376628" updateReferences="true"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Array_App9(Assign-9)&apos; to &apos;Array_App9(Assign-4)&apos;" description="Rename resource &apos;Array_App9(Assign-9)&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Array_App9(Assign-9)" name="Array_App9(Assign-4)" stamp="1684160929672" updateReferences="true"/>
+</session>

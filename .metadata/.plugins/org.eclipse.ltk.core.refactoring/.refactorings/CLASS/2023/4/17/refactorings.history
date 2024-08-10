@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;P1.Variables&apos; to &apos;Components&apos;&#x0D;&#x0A;- Original project: &apos;CLASS&apos;&#x0D;&#x0A;- Original element: &apos;P1.Variables&apos;&#x0D;&#x0A;- Renamed element: &apos;P1.Components&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Variables&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;P1{Variables.java[Variables" matchStrategy="1" name="Components" qualified="false" references="true" similarDeclarations="false" stamp="1682349976002" textual="false" version="1.0"/>
+</session>
