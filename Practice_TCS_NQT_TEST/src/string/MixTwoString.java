@@ -17,8 +17,7 @@ public class MixTwoString {
 			result[index]=ch1[i];
 			index++;
 			result[index]=ch2[i];
-			index++;
-			
+			index++;	
 		}
 		System.out.print(result);
 	sc.close();

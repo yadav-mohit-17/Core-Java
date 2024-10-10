@@ -45,6 +45,11 @@ public class PracticeArray_1 {
 			finalArray[indR4]=n1*n2;
 			indR4++;
 		}
+		System.out.print("Original Array are :");
+		for(int k : a) {
+			System.out.print(k+" ");
+		}
+		System.out.println();
 		
 		System.out.print("r1[] elements are :");
 		for(int aa :r1) {
@@ -53,11 +58,6 @@ public class PracticeArray_1 {
 		
 		System.out.print("\nr2[] elements are :");
 		for(int aa: r2) {
-			System.out.print(aa+" ");
-		}
-		
-		System.out.print("\nr3[] elements are :");
-		for(int aa : r3 ) {
 			System.out.print(aa+" ");
 		}
 		

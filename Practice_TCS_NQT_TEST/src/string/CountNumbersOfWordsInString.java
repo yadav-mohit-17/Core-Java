@@ -8,7 +8,7 @@ public class CountNumbersOfWordsInString {
 		String str =sc.nextLine();
 		
 		String[] str1=str.split(" ");
-		System.out.println(str1.length);
+		System.out.println("Total Words in this Sentence Are : "+str1.length);
 		sc.close();
 	}
 

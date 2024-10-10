@@ -20,6 +20,7 @@ public class RemoveCharFromFirstStringAvailInSecondString {
 			if(unique) {
 				System.out.println(str1.charAt(i));
 			}
-		}		
+		}	
+		sc.close();
 	}
 }

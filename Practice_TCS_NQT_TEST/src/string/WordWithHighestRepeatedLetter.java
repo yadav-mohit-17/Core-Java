@@ -10,7 +10,7 @@ public class WordWithHighestRepeatedLetter {
 		    String myString = sc.nextLine();
 		    String result = "";
 		    int count = 0;
-
+		    
 		    String[] words = myString.split("\\s+");
 		    for(int i = 0; i < words.length; i++) {
 		        for(int j = 0; j < words[i].length(); j++) {
@@ -21,12 +21,11 @@ public class WordWithHighestRepeatedLetter {
 		                    count++;
 		                    result=words[i];
 		                }
-
 		            }
 		        }
 		        
 		    }
 		    System.out.println(result);
-	
+	sc.close();
   }
 }

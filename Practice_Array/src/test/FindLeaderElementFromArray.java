@@ -3,27 +3,24 @@
 
 package test;
 
-import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class FindLeaderElementFromArray {
 	public static void main(String[] args) {
 		int[] arr= {1,6,6,5,7,4,1,7,7,7,7,7,7,7,2};
 		int leader = arr.length/2;  //7
-		int count=1;
-		Arrays.sort(arr); //{1,1,2,4,5,6,6,7,7,7,7,7}
+		Map<Integer,Integer> map=new HashMap<>();
 		for(int i=0;i<arr.length;i++) {
-			for(int j=i+1;j<arr.length;j++) {
-				if(arr[i]==arr[j]) {
-					count++;
-				}
-				else {
-					break;
-				}
+			if(!map.containsKey(arr[i])) {
+				map.put(arr[i], 1);
+			}
+			else {
+				int cnt=map.get(arr[i]);
+				map.put(arr[i], cnt+1);
 			}
 		}
-		if(count > leader) {
-			System.out.println(count);
-		}
+		
+		
 	}
-
 }

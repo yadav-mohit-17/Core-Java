@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class Duplicate {
 	public static void main(String[] args) {
 		int[] arr= {1,3,2,6,1,7,3,4,9,2,2,2,2,8};
+		
 		Arrays.sort(arr);
 		int[] temp=new int[arr.length];
 		int j=0,k=0;
@@ -21,5 +22,7 @@ public class Duplicate {
 		for(int i=0;i<temp.length-k;i++) {
 			System.out.print(temp[i]+" ");
 		}
+		
+		
 	}
 }

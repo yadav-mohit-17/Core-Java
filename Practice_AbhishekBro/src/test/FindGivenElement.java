@@ -7,7 +7,7 @@ public class FindGivenElement {
 		int ele=3;
 		for(int i=0; i<a.length;i++) {
 			if(a[i]==ele) {
-				System.out.println(i);
+				System.out.println("Given Number is present at index position :"+i+"th");
 			}
 		}
 	}
