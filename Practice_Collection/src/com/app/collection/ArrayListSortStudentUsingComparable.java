@@ -10,6 +10,9 @@ class Student implements Comparable<Student>{
 	private int stdAge;
 	private String stdGen;
 	
+	public static final String GENDER_MALE="Male";
+	public static final String GENDER_FEMALE="Female";
+	
 	Student(String stdName, int rollNo, int stdAge, String stdGen){
 		this.stdName=stdName;
 		this.rollNo=rollNo;
@@ -64,17 +67,17 @@ class Student implements Comparable<Student>{
 	}
 }
 
-public class ArrayList_SortStudentUsingComparable {
+public class ArrayListSortStudentUsingComparable {
 	public static void main(String[] args) {
-		ArrayList<Student> std=new ArrayList<Student>();
+		ArrayList<Student> std=new ArrayList<>();
 		std.addAll(Arrays.asList(
-				new Student("ABC",101, 23,"Male"),
-				new Student("XYZ",102, 11,"Male"),
-				new Student("LMN",103, 22,"Female"),
-				new Student("KLM",104, 28,"Male"),
-				new Student("CAB",105, 14,"Female"),
-				new Student("BCA",106, 33,"Female"),
-				new Student("MCA",107, 26,"Male")
+				new Student("ABC",101, 23,Student.GENDER_MALE),
+				new Student("XYZ",102, 11,Student.GENDER_MALE),
+				new Student("LMN",103, 22,Student.GENDER_FEMALE),
+				new Student("KLM",104, 28,Student.GENDER_MALE),
+				new Student("CAB",105, 14,Student.GENDER_FEMALE),
+				new Student("BCA",106, 33,Student.GENDER_FEMALE),
+				new Student("MCA",107, 26,Student.GENDER_MALE)
 			));
 		
 	

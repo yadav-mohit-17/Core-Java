@@ -76,21 +76,19 @@ public class EmployeeMain {
 				new Employee(105, "Rithanya", "Female", 01, 100000.00)));
 
 		// Get Highest Salary
-		Employee highSal = emp.stream().max(Comparator.comparing(Employee::getSalary))
-				.orElseThrow(NoSuchElementException::new);
-		System.out.println(highSal.getName() + " " + highSal.getSalary());
-
+		Optional<Employee> highSal=emp.stream().max(Comparator.comparing(Employee ::getSalary));
+		highSal.ifPresent(e -> System.out.println(e.getName()+" "+ e.getSalary()));
+		//or
+		Employee sal= emp.stream().max(Comparator.comparing(Employee ::getSalary)).orElseThrow(NoSuchElementException ::new);
+		System.out.println(sal.getName()+" "+sal.getSalary());
+		
 		// add 500 to male employee
-		System.out.println("After Adding 500 to Each Male Employee Salary");
-		emp.stream().filter(i -> i.getGender() == "Male").map(i -> i.getName() + " ->" + (i.getSalary() + 500))
-				.collect(Collectors.toList()).forEach(System.out::println);
+		System.out.println("After Adding 500 to male employee");
+		emp.stream().filter(i-> i.getGender()=="Male").map(i-> i.getSalary()+500).collect(Collectors.toList()).forEach(System.out::println);
 		System.out.println("--------------------------------------------------------");
 
 		// after adding 2000 to all employees new salary
-		System.out.println("Name "+" OldSalary"+ " "+"New Salary");
-		emp.stream().map(i -> i.getName() + " " + i.getSalary() + " " + (i.getSalary() + 2000))
-				.collect(Collectors.toList()).forEach(System.out::println);
-		System.out.println("--------------------------------------------------------");
+		emp.stream().map(i-> i.getId()+" "+i.getName()+" "+i.getSalary()+" "+(i.getSalary()+2000)).collect(Collectors.toList()).forEach(System.out::println);
 
 		// Gender wise average Salary
 		Map<String, Double> list = emp.stream()
@@ -114,12 +112,12 @@ public class EmployeeMain {
 		emp.stream().map(i -> i.getName() + " " + i.getSalary() + " " + (i.getSalary() + (0.20 * i.getSalary())))
 				.collect(Collectors.toList()).forEach(System.out::println);
 
-		// Gender of Number of Employees
+		// Gender wise Number of Employees
 		Map<String, Long> cnt = emp.stream().collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
 		System.out.println(cnt);
 
-		// 2nd Highest Salary
-		Optional<Employee> secHighSal=emp.stream().sorted((e1,e2)-> Double.compare(e2.getSalary(), e1.getSalary())).skip(1).findFirst();
-		secHighSal.ifPresent(employee-> System.out.println(employee.getName()+" "+employee.getSalary()));
+		// 2nd Highest Salary						//comparator- sort data in desc order based on salary										
+		Optional<Employee> secHighSal=emp.stream().sorted((e1,e2)-> Double.compare(e2.getSalary(),e1.getSalary()))											.skip(1).findFirst();
+		secHighSal.ifPresent(employee -> System.out.println(employee.getName()+" "+ employee.getSalary()));
 	}
 }
